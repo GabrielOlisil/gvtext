@@ -16,7 +16,7 @@ from mongoengine import connect
 
 connect(
     db="gvtext",
-    host="mongodb://root:root@localhost:27017",
+    host="mongodb://root:root@mongo:27017",
 )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
