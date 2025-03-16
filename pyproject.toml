@@ -1,0 +1,28 @@
+[project]
+name = "gvtext"
+version = "0.1.0"
+description = "A simple code editor"
+authors = [
+    {name = "Gabriel de Oliveira Silva",email = "gabriel.oliveira.s177@gmail.com"},
+    {name = "Victor Daniel",email = "victordanielekalksdfjapsodf@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "django (>=5.1.7,<6.0.0)",
+    "django-rest-framework (>=0.1.0,<0.2.0)",
+    "mongoengine (>=0.29.1,<0.30.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+flake8 = "^7.1.2"
+isort = "^6.0.1"
+pre-commit = "^4.1.0"
+
