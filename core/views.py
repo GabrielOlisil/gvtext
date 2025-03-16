@@ -8,6 +8,11 @@ from .models import User
 from .serializers import UserSerializer
 
 
+class HomeView(APIView):
+    def get(self, request):
+        return Response({"up_status": "up"})
+
+
 class UserView(APIView):
     def get(self, request):
         users = User.objects.all()
