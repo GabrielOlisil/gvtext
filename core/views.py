@@ -14,7 +14,7 @@ class UserView(APIView):
         return Response([UserSerializer.to_json(user) for user in users])
 
     def post(self, request):
-        data = request.data
-        user = User(name=data["name"], age=data["age"])
+        datareq = request.data
+        user = User(name=datareq["name"], age=datareq["age"])
         user.save()
         return Response(UserSerializer.to_json(user))
